@@ -1,0 +1,177 @@
+@font-face {
+    font-family: game;
+    src: url("./Fonts/Kajiro\ Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.workingArea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+.navbar{
+    width: 100%;
+    padding: 2px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 65px;
+}
+
+.nav-left{
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+.nav-left a{
+    pointer-events: all;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-right{
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+
+.nav-right a{
+    pointer-events: all;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0%, -50%);
+    width: 100%;
+}
+
+.heroLeft{
+    min-width: 50%;
+}
+
+
+.elem{
+    position: relative;
+    height: 7vw;
+    overflow: hidden;
+}
+
+.elem h1:nth-child(1){
+    top: 0;
+}
+
+.elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: game;
+    font-weight: 100;
+    color: #fff;
+    font-size: 9vw;
+}
+
+.heroLeft button{
+    pointer-events: all;
+    cursor: pointer;
+    border: none;
+    margin-top: 2vw;
+    font-family: game;
+    font-size: 2.2vw;
+    padding: 0.5vw 3.5vw;
+    background-color: #fff;
+}
+
+.heroRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 23%;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heroRight p{
+    font-size: 1.1vw;
+    font-weight: 300;
+    text-align: right;
+}
+
+.heroRight .emptyBox{
+    background: url("https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 12vw;
+}
+
+.heroRight p:nth-child(3){
+    margin-top: 10px;
+}
+
+.heroRight p:nth-child(4){
+    margin-top: 40px;
+}
